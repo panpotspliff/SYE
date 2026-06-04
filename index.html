@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYE | Cursuri Autorizate</title>
+    
+    <!-- Favicon (Browser Tab Icon) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="SYE - System Investment Educational. Cursuri autorizate ANC și programe de formare profesională cu diplome recunoscute de statul român și la nivel european.">
+    <meta name="keywords" content="cursuri autorizate, diplome ANC, formare profesionala, curs SSM, curs GDPR, curs cadru tehnic PSI, curs servant pompier, instructor sportiv">
+    <meta name="author" content="SYE System Investment">
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sye.ro/">
+    <meta property="og:title" content="SYE | Cursuri Autorizate">
+    <meta property="og:description" content="Investește în tine. Construiește-ți viitorul cu cursuri autorizate ANC pentru a evolua în carieră.">
+    <meta property="og:image" content="https://placehold.co/1200x630/090a0c/d6a350?text=SYE+System+Investment+Educational">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="SYE | Cursuri Autorizate">
+    <meta property="twitter:description" content="Investește în tine. Construiește-ți viitorul cu cursuri autorizate ANC pentru a evolua în carieră.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/090a0c/d6a350?text=SYE+System+Investment+Educational">
+    
+    <!-- Resource Preconnecting for Faster Initial Load -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles (Extracted) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-darkbg text-gray-200 font-sans overflow-x-hidden">
+
+    <!-- FUNDAL AMBIENTAL DINAMIC -->
+    <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div class="ambient-orb bg-gold/15 w-[600px] h-[600px] top-[-10%] left-[-10%]" style="--speed: 30"></div>
+        <div class="ambient-orb bg-gold-dark/10 w-[500px] h-[500px] bottom-[-20%] right-[-10%]" style="--speed: -20"></div>
+        <div class="ambient-orb bg-[#1f2330]/40 w-[800px] h-[800px] top-[40%] left-[30%]" style="--speed: 15"></div>
+    </div>
+
+    <!-- HEADER SECTION -->
+    <header class="fixed top-0 left-0 w-full z-50 glass-header transition duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-1 flex justify-start">
+                    <a href="#acasa" class="flex items-center space-x-3 group">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-gold-dark via-gold to-gold-light flex items-center justify-center text-darkbg shadow-[0_0_15px_rgba(214,163,80,0.4)] group-hover:shadow-[0_0_25px_rgba(214,163,80,0.7)] group-hover:scale-105 transition-all duration-300 relative overflow-hidden">
+                            <!-- Dynamic SVG Globe -->
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 animate-spin-slow-gpu relative z-10">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <!-- Meridiane (Longitudine) -->
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                <!-- Paralele (Latitudine) -->
+                                <path d="M2 12h20"></path>
+                                <path d="M3.5 7h17"></path>
+                                <path d="M3.5 17h17"></path>
+                            </svg>
+                            <!-- Inner glow highlight (Removed mix-blend-overlay for mobile performance) -->
+                            <div class="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <div class="text-white font-extrabold text-xl tracking-wider leading-none mb-0.5">SYE</div>
+                            <div class="text-[9px] text-gold tracking-widest uppercase font-semibold leading-none">System Investment Educational</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex space-x-8 justify-center">
+                    <a href="#acasa" class="nav-link inline-block pb-1 text-base font-semibold tracking-wide text-gray-400 transition-all duration-300 hover:text-white">Acasă</a>
+                    <a href="#cursuri" class="nav-link inline-block pb-1 text-base font-semibold tracking-wide text-gray-400 transition-all duration-300 hover:text-white">Cursuri</a>
+                    <a href="#despre" class="nav-link inline-block pb-1 text-base font-semibold tracking-wide text-gray-400 transition-all duration-300 hover:text-white">Despre noi</a>
+                    <a href="#contact" class="nav-link inline-block pb-1 text-base font-semibold tracking-wide text-gray-400 transition-all duration-300 hover:text-white">Contact</a>
+                </nav>
+
+                <!-- Dynamic Actions & Mobile Menu Button -->
+                <div class="flex-1 flex items-center justify-end space-x-2 sm:space-x-4">
+                    <!-- Quick contact links for rapid trust -->
+                <a href="tel:+40771725305" class="md:hidden text-gold hover:text-white transition-colors duration-300 flex items-center space-x-2 text-sm bg-gold/10 px-3 py-1.5 rounded-full border border-gold/20">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="mailto:systeminvestmenteducational@gmail.com" class="text-gold hover:text-white transition-colors duration-300 flex items-center space-x-2 text-sm bg-gold/10 px-3 py-1.5 rounded-full border border-gold/20">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="hidden lg:inline font-semibold">E-mail</span>
+                    </a>
+                    
+                    <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none ml-2" aria-label="Deschide Meniul">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation (Smooth Slide Down) -->
+        <div id="mobile-menu" class="absolute top-full left-0 w-full md:hidden bg-darkbg/95 backdrop-blur-md border-b border-gold/20 overflow-hidden max-h-0 opacity-0 transition-all duration-300 shadow-2xl">
+            <div class="px-4 py-6 space-y-3">
+                <a href="#acasa" class="block text-gold font-bold text-lg py-2 border-b border-gray-800">Acasă</a>
+                <a href="#cursuri" class="block text-gray-300 hover:text-gold font-bold text-lg py-2 border-b border-gray-800">Cursuri</a>
+                <a href="#despre" class="block text-gray-300 hover:text-gold font-bold text-lg py-2 border-b border-gray-800">Despre noi</a>
+                <a href="#contact" class="block text-gray-300 hover:text-gold font-bold text-lg py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: ACASĂ -->
+    <section id="acasa" class="relative min-h-[100dvh] pt-28 flex flex-col justify-between bg-gradient-to-b from-transparent via-darkbg/50 to-[#0a0c10]/90 md:backdrop-blur-sm z-10 transition-colors duration-1000 overflow-hidden">
+        
+        <!-- Decorative grid overlay with subtle gold glows - NOW ANIMATED -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(214,163,80,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(214,163,80,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none md:animate-grid-diagonal"></div>
+        
+        <div class="absolute top-1/4 right-10 w-96 h-96 bg-gold/5 rounded-full filter blur-[120px] pointer-events-none animate-pulse-glow"></div>
+        <div class="absolute bottom-10 left-10 w-80 h-80 bg-gold/5 rounded-full filter blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 flex-grow flex items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+                
+                <!-- Hero text details -->
+                <div class="lg:col-span-7 space-y-6 text-left relative z-10 reveal-title">
+                    <div class="inline-flex items-center space-x-2 bg-gold/10 border border-gold/30 px-3 py-1.5 rounded-full text-xs font-bold text-gold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-ping"></span>
+                        <span>Înscrieri deschise - Diplome Acreditate ANC / Minister</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        INVESTEȘTE ÎN TINE. <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold via-gold-light to-gold-dark">CONSTRUIEȘTE-ȚI VIITORUL.</span>
+                    </h1>
+                    
+                    <p class="text-gray-400 text-lg max-w-xl leading-relaxed">
+                        Cursuri autorizate, create pentru a-ți oferi competențele de care ai nevoie pentru a evolua în carieră.
+                    </p>
+
+                    <!-- CTA Actions -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 reveal delay-100">
+                        <button type="button" onclick="scrollToSection(event, 'cursuri')" class="touch-manipulation group relative px-8 py-4 bg-gradient-to-r from-gold-dark via-gold to-gold-light text-darkbg font-bold rounded-lg text-center shadow-lg md:hover:shadow-gold/30 transform md:hover:-translate-y-1 md:active:scale-95 transition-all duration-300 flex items-center justify-center space-x-3 overflow-hidden w-full sm:w-auto">
+                            <div class="absolute inset-0 w-1/2 h-full bg-white/10 skew-x-[-20deg] -translate-x-full md:group-hover:translate-x-[300%] transition-transform duration-1000"></div>
+                            <span>VEZI CURSURILE</span>
+                            <i class="fa-solid fa-arrow-right md:group-hover:translate-x-1.5 transition-transform duration-300"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right visual graphic area: Dynamic Graduation Cap Animation -->
+                <div class="lg:col-span-5 relative z-10 flex justify-center lg:justify-end reveal delay-200">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 flex items-center justify-center">
+                        <!-- Glowing animated rings -->
+                        <div class="absolute inset-0 bg-gold/20 rounded-full animate-ping" style="animation-duration: 3s;"></div>
+                        <div class="absolute inset-8 bg-gradient-to-tr from-gold-dark to-gold rounded-full opacity-20 animate-pulse-glow"></div>
+                        
+                        <!-- Floating Elements -->
+                        <div class="absolute top-4 left-10 text-gold-light text-2xl animate-float" style="animation-delay: 0.2s;"><i class="fa-solid fa-star"></i></div>
+                        <div class="absolute bottom-10 right-4 text-gold text-3xl animate-float" style="animation-delay: 1.5s;"><i class="fa-solid fa-award"></i></div>
+                        
+                        <!-- Main Icon -->
+                        <div class="relative z-10 text-9xl text-gold drop-shadow-[0_0_35px_rgba(214,163,80,0.5)] animate-float">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FEATURES SUB-GRID -->
+        <div class="bg-[#0f1116]/80 md:backdrop-blur-md text-white py-12 border-t border-white/5 reveal delay-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Feature 1 -->
+                    <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-white/5 border border-transparent hover:border-gold/20 transition-all duration-300">
+                        <div class="w-12 h-12 flex flex-shrink-0 items-center justify-center bg-gold/10 text-gold rounded-xl border border-gold/20">
+                            <i class="fa-solid fa-award text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-[#f5f5f5]">Certificate autorizate</h3>
+                            <p class="text-sm text-gray-400 mt-1">Diplome recunoscute oficial de Ministerul Muncii și Ministerul Educației.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-white/5 border border-transparent hover:border-gold/20 transition-all duration-300">
+                        <div class="w-12 h-12 flex flex-shrink-0 items-center justify-center bg-gold/10 text-gold rounded-xl border border-gold/20">
+                            <i class="fa-solid fa-laptop-code text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-[#f5f5f5]">Online și fizic</h3>
+                            <p class="text-sm text-gray-400 mt-1">Flexibilitate maximă: participă live din confortul casei tale sau în sălile noastre.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-white/5 border border-transparent hover:border-gold/20 transition-all duration-300">
+                        <div class="w-12 h-12 flex flex-shrink-0 items-center justify-center bg-gold/10 text-gold rounded-xl border border-gold/20">
+                            <i class="fa-solid fa-calendar-alt text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-[#f5f5f5]">Program flexibil</h3>
+                            <p class="text-sm text-gray-400 mt-1">Sesiuni adaptate după amiază sau în weekend pentru a nu-ți afecta jobul.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-white/5 border border-transparent hover:border-gold/20 transition-all duration-300">
+                        <div class="w-12 h-12 flex flex-shrink-0 items-center justify-center bg-gold/10 text-gold rounded-xl border border-gold/20">
+                            <i class="fa-solid fa-chart-line text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-[#f5f5f5]">Rezultate reale</h3>
+                            <p class="text-sm text-gray-400 mt-1">Competențe imediat aplicabile care îți aduc promovări și succes în carieră.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: CURSURI -->
+    <section id="cursuri" class="py-24 bg-gradient-to-b from-[#0a0c10]/90 via-[#0e1015]/90 to-[#121418]/90 md:backdrop-blur-md relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-12 reveal-title">
+                <div class="space-y-3 lg:max-w-2xl">
+                    <span class="text-xs font-bold text-gold uppercase tracking-widest block">CURSURI POPULARE</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f5f5f5]">Alege cursul potrivit pentru tine.</h2>
+                    <p class="text-gray-400">Descoperă cursurile noastre și înscrie-te rapid. Obține diploma autorizată pentru a putea profesa legal.</p>
+                </div>
+                
+                <!-- Group Discount Promo Banner -->
+                <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-5 sm:p-6 shadow-[0_0_25px_rgba(16,185,129,0.15)] flex items-start space-x-4 w-full lg:w-auto lg:max-w-md flex-shrink-0 relative overflow-hidden group hover:bg-emerald-500/15 hover:border-emerald-500/50 transition-colors duration-300">
+                    <!-- Background aesthetic icon -->
+                    <div class="absolute -right-4 -top-4 text-emerald-500/10 text-7xl rotate-12 transition-transform duration-500 group-hover:rotate-0"><i class="fa-solid fa-percent"></i></div>
+                    
+                    <div class="w-12 h-12 flex flex-shrink-0 items-center justify-center bg-emerald-500/20 text-emerald-400 rounded-xl border border-emerald-500/30 relative z-10">
+                        <i class="fa-solid fa-users text-xl"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <h4 class="font-bold text-emerald-400 text-lg tracking-wide">Ofertă pentru Grupuri!</h4>
+                        <p class="text-xs sm:text-sm text-emerald-400/80 mt-1 leading-relaxed">Înscrie o echipă sau mai multe persoane de la aceeași companie și beneficiați de <strong>reduceri speciale</strong>. Selectați opțiunea în formular!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Courses Grid -->
+            <!-- Dynamic Course Grid (Rendered by script.js) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal delay-100" id="courses-grid"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: DESPRE NOI -->
+    <section id="despre" class="py-24 bg-gradient-to-b from-[#121418]/90 via-[#181a22]/90 to-[#0a0c10]/90 md:backdrop-blur-md relative overflow-hidden z-10">
+        
+        <!-- Decorative subtle background curves -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-gold/5 rounded-full filter blur-3xl pointer-events-none reveal"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-gold/5 rounded-full filter blur-3xl pointer-events-none reveal delay-200"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Animated Graphic -->
+                <div class="lg:col-span-5 relative flex justify-center items-center reveal py-10 lg:py-0">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 flex items-center justify-center group">
+                        <!-- Glowing animated rings -->
+                        <div class="absolute inset-0 border border-gold/20 rounded-full animate-[spin_10s_linear_infinite] border-dashed"></div>
+                        <div class="absolute inset-4 border border-gold/10 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
+                        <div class="absolute inset-8 bg-gradient-to-tr from-gold-dark to-gold rounded-full opacity-10 animate-pulse-glow group-hover:opacity-20 transition-opacity duration-500"></div>
+                        <div class="absolute inset-12 bg-gold/5 rounded-full animate-ping" style="animation-duration: 4s;"></div>
+                        
+                        <!-- Floating Elements -->
+                        <div class="absolute top-2 left-6 text-gold-light text-2xl animate-float" style="animation-delay: 0.3s;"><i class="fa-solid fa-users-gear"></i></div>
+                        <div class="absolute bottom-8 right-2 text-gold text-3xl animate-float" style="animation-delay: 1.8s;"><i class="fa-solid fa-certificate"></i></div>
+                        <div class="absolute top-1/2 -left-2 text-gold text-xl animate-float" style="animation-delay: 1.1s;"><i class="fa-solid fa-check-double"></i></div>
+                        
+                        <!-- Main Icon -->
+                        <div class="relative z-10 text-8xl sm:text-9xl text-gold drop-shadow-[0_0_30px_rgba(214,163,80,0.6)] animate-float group-hover:scale-105 transition-transform duration-500">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Mission and interactive tabs -->
+                <div class="lg:col-span-7 space-y-6 reveal-title delay-100">
+                    <span class="text-xs font-bold text-gold uppercase tracking-widest block">DESPRE NOI</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f5f5f5] leading-tight">
+                        Educație practică pentru oameni ambițioși.
+                    </h2>
+                    
+                    <p class="text-gray-300 leading-relaxed text-base">
+                        SYE este un centru de formare profesională care oferă cursuri autorizate și programe de dezvoltare personală și profesională. Misiunea noastră este să te echipăm cu cunoștințele practice de care ai nevoie pentru a reuși pe piața muncii din România.
+                    </p>
+
+                    <!-- Bullet trust lists with high fidelity hover -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-center space-x-3 p-3 bg-white/5 rounded-xl border border-white/5 hover:border-gold/30 hover:bg-white/10 transition-all duration-300 reveal delay-100">
+                            <div class="text-gold"><i class="fa-solid fa-stamp text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-sm text-[#f5f5f5]">Diplome ANC</h4>
+                                <p class="text-xs text-gray-400">Acreditate integral conform legilor</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3 p-3 bg-white/5 rounded-xl border border-white/5 hover:border-gold/30 hover:bg-white/10 transition-all duration-300 reveal delay-100">
+                            <div class="text-gold"><i class="fa-solid fa-chalkboard-user text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-sm text-[#f5f5f5]">Formatori Experți</h4>
+                                <p class="text-xs text-gray-400">Profesioniști activi în domeniu</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3 p-3 bg-white/5 rounded-xl border border-white/5 hover:border-gold/30 hover:bg-white/10 transition-all duration-300 reveal delay-200">
+                            <div class="text-gold"><i class="fa-solid fa-graduation-cap text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-sm text-[#f5f5f5]">+5000 Absolvenți</h4>
+                                <p class="text-xs text-gray-400">Rată masivă de integrare rapidă</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3 p-3 bg-white/5 rounded-xl border border-white/5 hover:border-gold/30 hover:bg-white/10 transition-all duration-300 reveal delay-200">
+                            <div class="text-gold"><i class="fa-solid fa-piggy-bank text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-sm text-[#f5f5f5]">Finanțare Flexibilă</h4>
+                                <p class="text-xs text-gray-400">Rate lejere fără dobândă</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trigger Button for additional info modal slider -->
+                    <div class="pt-4 reveal delay-300">
+                        <button onclick="toggleDetailsDrawer(true)" class="px-8 py-3.5 bg-gradient-to-r from-gold-dark to-gold text-darkbg font-bold rounded-lg shadow-md md:hover:shadow-xl md:hover:shadow-gold/10 transform md:hover:-translate-y-0.5 md:active:scale-95 transition-all duration-300 flex items-center space-x-2">
+                            <span>AFLĂ MAI MULTE</span>
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUE STACKING FAQ SECTION -->
+    <section id="faq" class="py-24 bg-gradient-to-b from-[#0a0c10]/90 to-[#090a0c]/95 md:backdrop-blur-md border-t border-white/5 relative z-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center space-y-3 mb-12 reveal-title">
+                <span class="text-xs font-bold text-gold uppercase tracking-widest">AȘTEPTĂRI & DETALII</span>
+                <h2 class="text-3xl font-extrabold text-[#f5f5f5]">Întrebări Frecvente</h2>
+                <p class="text-gray-400">Tot ce trebuie să știi despre înscriere, desfășurare și examenele autorizate.</p>
+            </div>
+
+            <!-- Accordion List -->
+            <div class="space-y-4 reveal delay-100">
+                <!-- FAQ Item 1 -->
+                <div class="bg-cardbg/80 border border-white/5 hover:border-gold/20 rounded-xl overflow-hidden transition-colors" itemscope>
+                    <button class="w-full text-left p-6 font-bold text-[#f5f5f5] flex justify-between items-center focus:outline-none" aria-expanded="false" aria-controls="faq1" onclick="toggleAccordion('faq1', this)">
+                        <span>Cum mă înscriu la curs?</span>
+                        <i id="faq1-icon" class="fa-solid fa-chevron-down text-gold transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq1" class="hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed border-t border-gray-800/50 pt-4">
+                        Înscrierea se face online prin completarea formularului de pe site. După confirmare, veți primi toate detaliile necesare pentru începerea cursului.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-cardbg/80 border border-white/5 hover:border-gold/20 rounded-xl overflow-hidden transition-colors" itemscope>
+                    <button class="w-full text-left p-6 font-bold text-[#f5f5f5] flex justify-between items-center focus:outline-none" aria-expanded="false" aria-controls="faq2" onclick="toggleAccordion('faq2', this)">
+                        <span>Primesc diplomă sau certificat la final?</span>
+                        <i id="faq2-icon" class="fa-solid fa-chevron-down text-gold transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq2" class="hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed border-t border-gray-800/50 pt-4">
+                        Da. La finalizarea cursului și îndeplinirea tuturor cerințelor programului, participanții primesc diploma sau certificatul aferent, emis în conformitate cu reglementările și procedurile stabilite de Autoritatea Națională pentru Calificări (ANC), acolo unde programul este autorizat.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-cardbg/80 border border-white/5 hover:border-gold/20 rounded-xl overflow-hidden transition-colors" itemscope>
+                    <button class="w-full text-left p-6 font-bold text-[#f5f5f5] flex justify-between items-center focus:outline-none" aria-expanded="false" aria-controls="faq3" onclick="toggleAccordion('faq3', this)">
+                        <span>Cât durează cursurile?</span>
+                        <i id="faq3-icon" class="fa-solid fa-chevron-down text-gold transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq3" class="hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed border-t border-gray-800/50 pt-4">
+                        Durata variază în funcție de program. Informațiile complete sunt disponibile pe pagina fiecărui curs.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 & 5: CONTACT & FOOTER -->
+    <section id="contact" class="bg-gradient-to-b from-[#090a0c]/95 to-[#050505]/100 md:backdrop-blur-md text-[#f5f5f5] relative pt-20 border-t border-white/5 z-10">
+        
+        <!-- Pre-footer dynamic CTA Banner -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 reveal-title">
+            <div class="bg-gradient-to-r from-gold-dark via-gold to-gold-light rounded-2xl p-8 sm:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 animate-pulse-glow md:hover:scale-[1.01] transition-transform duration-500">
+                <div class="space-y-3 text-center lg:text-left">
+                    <div class="flex items-center justify-center lg:justify-start space-x-3 text-darkbg">
+                        <div class="p-2 bg-darkbg/10 rounded-full">
+                            <i class="fa-solid fa-envelope-open-text text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-darkbg">Ești gata să investești în tine?</h3>
+                    </div>
+                    <p class="text-darkbg/90 font-medium max-w-xl text-sm sm:text-base">
+                        Descoperă cursurile noastre autorizate și fă primul pas important către un viitor mai bun. Rezervă-ți locul acum înainte de epuizarea ofertelor promoționale!
+                    </p>
+                </div>
+                <button type="button" onclick="scrollToSection(event, 'cursuri')" class="touch-manipulation px-8 py-4 bg-darkbg md:hover:bg-black text-gold font-bold rounded-xl transition-all duration-300 shadow-xl md:hover:shadow-gold/20 transform md:hover:-translate-y-1 md:active:scale-95 flex items-center space-x-3 text-center w-full lg:w-auto justify-center">
+                    <span>VEZI CURSURILE</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Contact Section Form & Detail Layout -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Left Info Area -->
+            <div class="lg:col-span-5 space-y-6 reveal-title delay-100">
+                <h3 class="text-2xl font-bold text-[#f5f5f5] flex items-center space-x-2">
+                    <span class="w-1.5 h-6 bg-gold rounded-full"></span>
+                    <span>Intră în legătură cu noi</span>
+                </h3>
+                <p class="text-gray-400 text-sm">
+                    Ai întrebări referitoare la perioada de desfășurare, plata în rate sau acreditarea diplomelor? Completează formularul de contact sau sună-ne direct pentru asistență rapidă gratuită!
+                </p>
+
+                <!-- Dynamic Quick Contact Cards -->
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-center space-x-4 p-4 bg-darkbg border border-gray-800 rounded-xl hover:border-gold/55 transition-all">
+                        <div class="text-gold text-2xl w-12 h-12 rounded-lg bg-gold/10 flex-shrink-0 flex items-center justify-center">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="min-w-0">
+                            <p class="text-xs text-gray-500 uppercase tracking-wider font-bold">Telefon Direct</p>
+                            <a href="tel:+40771725305" class="text-lg font-bold text-white hover:text-gold transition-colors">+40 771 725 305</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4 p-4 bg-darkbg border border-gray-800 rounded-xl hover:border-gold/55 transition-all">
+                        <div class="text-gold text-2xl w-12 h-12 rounded-lg bg-gold/10 flex-shrink-0 flex items-center justify-center">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="min-w-0">
+                            <p class="text-xs text-gray-500 uppercase tracking-wider font-bold">E-mail Suport</p>
+                            <a href="#" onclick="window.location.href='mailto:' + 'systeminvestmenteducational' + '@' + 'gmail.com'; return false;" class="text-base sm:text-lg font-bold text-white hover:text-gold transition-colors break-all">systeminvestmenteducational<span class="hidden">bot-trap</span>@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4 p-4 bg-darkbg border border-gray-800 rounded-xl hover:border-gold/55 transition-all">
+                        <div class="text-gold text-2xl w-12 h-12 rounded-lg bg-gold/10 flex-shrink-0 flex items-center justify-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="min-w-0">
+                            <p class="text-xs text-gray-500 uppercase tracking-wider font-bold">Locație Centru</p>
+                            <p class="text-sm font-semibold text-white">București, România</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4 p-4 bg-darkbg border border-gray-800 rounded-xl hover:border-gold/55 transition-all">
+                        <div class="text-gold text-2xl w-12 h-12 rounded-lg bg-gold/10 flex-shrink-0 flex items-center justify-center">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="min-w-0">
+                            <p class="text-xs text-gray-500 uppercase tracking-wider font-bold">Program Telefonic</p>
+                            <p class="text-sm font-semibold text-white">L-V: 09:00 - 20:00</p>
+                            <p class="text-sm font-semibold text-gray-400">Weekend: 15:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form Area with dynamic visual check feedback -->
+            <div class="lg:col-span-7 reveal delay-200">
+                <div class="bg-[#0e1015]/80 md:backdrop-blur-sm p-8 rounded-2xl border border-white/5 shadow-2xl relative overflow-hidden group hover:border-gold/20 transition-colors">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold-dark via-gold to-gold-light opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <h3 class="text-xl font-bold text-[#f5f5f5] mb-6">Trimite-ne un e-mail rapid</h3>
+                    
+                    <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Nume Complet</label>
+                                <input type="text" id="contact-name" required class="w-full bg-cardbg border border-gray-800 focus:border-gold rounded-lg px-4 py-3 text-white text-sm outline-none transition-colors" placeholder="Ex: Andrei Ionescu">
+                            </div>
+                            <div>
+                                <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Număr de Telefon</label>
+                                <input type="tel" id="contact-phone" required class="w-full bg-cardbg border border-gray-800 focus:border-gold rounded-lg px-4 py-3 text-white text-sm outline-none transition-colors" placeholder="Ex: 0722 000 000">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Adresă de E-mail</label>
+                            <input type="email" id="contact-email" required class="w-full bg-cardbg border border-gray-800 focus:border-gold rounded-lg px-4 py-3 text-white text-sm outline-none transition-colors" placeholder="Ex: nume@email.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Cursul de care ești interesat</label>
+                            <select id="contact-course" class="w-full bg-cardbg border border-gray-800 focus:border-gold rounded-lg px-4 py-3 text-white text-sm outline-none transition-colors">
+                                <option value="Altul/Informații Generale">Altul / Informații Generale</option>
+                                <option value="CADRU TEHNIC PSI">CADRU TEHNIC PSI</option>
+                                <option value="INSPECTOR SSM">INSPECTOR SSM</option>
+                                <option value="SERVANT POMPIER">SERVANT POMPIER</option>
+                                <option value="ȘEF SVSU">ȘEF SVSU (Serviciu Voluntar Situații Urgență)</option>
+                                <option value="GDPR">RESPONSABIL GDPR</option>
+                                <option value="INSTRUCTOR SPORTIV">INSTRUCTOR SPORTIV</option>
+                                <option value="OPERATOR TERMOPROTECȚIE">OPERATOR TERMOPROTECȚIE</option>
+                                <option value="DOAR EXAMINARE">DOAR EXAMINARE (Fără Curs)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Mesajul tău</label>
+                            <textarea id="contact-message" rows="4" required class="w-full bg-cardbg border border-gray-800 focus:border-gold rounded-lg px-4 py-3 text-white text-sm outline-none transition-colors" placeholder="Scrie aici întrebarea ta..."></textarea>
+                        </div>
+
+                        <!-- GDPR Checkbox -->
+                        <div class="flex items-start space-x-2 pt-2">
+                            <input type="checkbox" id="contact-gdpr" required class="mt-1 accent-gold rounded">
+                            <span class="text-xs text-gray-400">Sunt de acord cu prelucrarea datelor cu caracter personal în scopul soluționării cererii mele de către SYE conform legii.</span>
+                        </div>
+
+                        <!-- Submit Button with Tactile Feedback -->
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-gold-dark via-gold to-gold-light text-darkbg font-bold rounded-lg text-sm transition-all duration-300 hover:shadow-lg hover:shadow-gold/30 active:scale-95 flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>TRIMITE MESAJUL ACUM</span>
+                        </button>
+                    </form>
+                    
+                    <!-- Form Success Message Block -->
+                    <div id="contact-success" class="hidden absolute inset-0 bg-darkbg flex flex-col items-center justify-center text-center p-8 z-20 transition-all duration-500">
+                        <div class="w-20 h-20 bg-gold/15 rounded-full flex items-center justify-center text-gold text-4xl mb-6 animate-pulse">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-2">Mesaj trimis cu succes!</h4>
+                        <p class="text-gray-400 text-sm max-w-sm">
+                            Vă mulțumim pentru interes! Un consultant SYE vă va contacta telefonic sau pe e-mail în cel mai scurt timp pentru detalii.
+                        </p>
+                        <button onclick="resetContactForm()" class="mt-6 text-gold underline text-xs font-semibold">Trimite un alt mesaj</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- LEGAL FOOTER -->
+        <div class="border-t border-gray-900 bg-darkbg text-gray-500 text-xs py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    
+                    <!-- Col 1: SYE Brand Details -->
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-white font-extrabold text-base tracking-wider">SYE</span>
+                        </div>
+                        <p class="text-gray-500 leading-relaxed text-xs">
+                            Investim în educație, investim în oameni, investim în viitor. Formăm specialiști cu certificări recunoscute de statul român și la nivel european.
+                        </p>
+                    </div>
+
+                    <!-- Col 2: Useful Navigation Links -->
+                    <div class="space-y-3 md:justify-self-center">
+                        <h4 class="text-white font-bold text-sm tracking-wide">LINK-URI UTILE</h4>
+                        <ul class="space-y-2 text-xs">
+                            <li><a href="#acasa" class="hover:text-gold transition-colors">Acasă</a></li>
+                            <li><a href="#cursuri" class="hover:text-gold transition-colors">Cursuri Acreditate</a></li>
+                            <li><a href="#despre" class="hover:text-gold transition-colors">Despre noi</a></li>
+                            <li><a href="#contact" class="hover:text-gold transition-colors">Formular Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3: Mandatory Romanian Legal Requirements -->
+                    <div class="space-y-3 md:justify-self-end">
+                        <h4 class="text-white font-bold text-sm tracking-wide">CERINȚE LEGALE</h4>
+                        <ul class="space-y-2 text-xs">
+                            <li><a href="https://anpc.ro/" target="_blank" class="hover:text-gold transition-colors flex items-center space-x-1">
+                                <i class="fa-solid fa-gavel text-[10px]"></i> <span>ANPC - Protecția Consumatorilor</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Copyright -->
+                <div class="border-t border-gray-900 pt-8 flex items-center justify-center text-center text-gray-600">
+                    <p>© 2026 SYE System Investment Educational. Toate drepturile rezervate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- MODAL 1: MULTI-STEP BOOKING WIZARD -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden overflow-y-auto" role="dialog" aria-modal="true">
+        <!-- Backdrop overlay -->
+        <div class="fixed inset-0 bg-black/80 backdrop-blur-sm transition-opacity" onclick="closeBookingWizard()"></div>
+
+        <!-- Content Container -->
+        <div class="flex min-h-screen items-center justify-center p-4">
+            <div class="relative w-full max-w-lg bg-cardbg border border-gold/40 rounded-2xl shadow-2xl overflow-hidden animate-toast z-10">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold-dark via-gold to-gold-light"></div>
+                
+                <!-- Close Button -->
+                <button onclick="closeBookingWizard()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors" aria-label="Închide">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+
+                <!-- Step Indicator Header -->
+                <div class="p-6 bg-darkbg border-b border-gray-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-gold uppercase tracking-widest" id="step-badge">Pasul 1 din 2: Alegere Curs</span>
+                    </div>
+                    <!-- Visual Progress Bar -->
+                    <div id="step-bar-container" class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden transition-shadow duration-500">
+                        <div id="step-bar" class="bg-gold h-full w-1/2 rounded-full transition-all duration-300 relative overflow-hidden">
+                            <!-- Dynamic Continuous Shimmer (Distinct, Slower, Glowy, Gradient) -->
+                            <div class="absolute inset-y-0 top-0 w-[40%] bg-gradient-to-r from-transparent via-yellow-100/60 to-transparent animate-shimmer-slide blur-[1px]"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dynamic Form content -->
+                <form id="wizard-form" onsubmit="handleWizardSubmit(event)" class="p-6 space-y-4">
+                    
+                    <!-- STEP 1: Course Choice & Promo Details -->
+                    <div id="wizard-step-1" class="space-y-4 animate-fade-in-up">
+                        
+                        <div>
+                            <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Curs Selectat</label>
+                            <input type="text" id="selected-course-title" readonly class="w-full bg-darkbg border border-gold/40 rounded-lg px-4 py-3 text-gold font-bold text-sm outline-none">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Metodă Desfășurare</label>
+                                <select id="course-delivery" class="w-full bg-darkbg border border-gray-800 focus:border-gold rounded-lg px-3 py-2.5 text-white text-xs outline-none">
+                                    <option value="Online">Online Live (ZOOM)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Tip de Plată</label>
+                                <select id="course-payment-plan" onchange="calculateWizardPrice()" class="w-full bg-darkbg border border-gray-800 focus:border-gold rounded-lg px-3 py-2.5 text-white text-xs outline-none">
+                                    <option value="integral">Plată Integrală</option>
+                                    <option value="rate">Plată în rate (25% avans)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- NEW SECTION: Reservation Type & Group Size -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Tip Rezervare</label>
+                                <select id="reservation-type" onchange="toggleGroupOptions()" class="w-full bg-darkbg border border-gray-800 focus:border-gold rounded-lg px-3 py-2.5 text-white text-xs outline-none transition-colors">
+                                    <option value="individual">Individuală (1 persoană)</option>
+                                    <option value="grup">Grup / Organizație</option>
+                                </select>
+                            </div>
+                            <div>
+                                <div id="group-size-container" class="hidden transition-all duration-300">
+                                    <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Număr Persoane</label>
+                                    <input type="number" id="group-size" min="2" value="2" oninput="calculateWizardPrice()" class="w-full bg-darkbg border border-gray-800 focus:border-gold rounded-lg px-3 py-2.5 text-white text-xs outline-none transition-colors">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FLOATING GREEN BANNER FOR GROUP RESERVATIONS -->
+                        <div id="group-promo-banner" class="hidden bg-emerald-500/15 border border-emerald-500/40 shadow-[0_0_15px_rgba(16,185,129,0.2)] p-3 rounded-xl flex items-start space-x-3 transition-all">
+                            <div class="text-emerald-400 mt-0.5"><i class="fa-solid fa-tags"></i></div>
+                            <div class="w-full">
+                                <p class="text-xs font-bold text-emerald-400 mb-2 border-b border-emerald-500/20 pb-1">Grilă Reduceri de Grup</p>
+                                <div class="grid grid-cols-2 gap-1.5 text-[10px]">
+                                    <div class="flex items-center justify-between bg-darkbg/60 px-2 py-1 rounded border border-emerald-500/20">
+                                        <span class="text-gray-300">3-9 pers</span>
+                                        <span class="font-bold text-emerald-400">-5%</span>
+                                    </div>
+                                    <div class="flex items-center justify-between bg-darkbg/60 px-2 py-1 rounded border border-emerald-500/20">
+                                        <span class="text-gray-300">10-19 pers</span>
+                                        <span class="font-bold text-emerald-400">-10%</span>
+                                    </div>
+                                    <div class="flex items-center justify-between bg-darkbg/60 px-2 py-1 rounded border border-emerald-500/20">
+                                        <span class="text-gray-300">20-29 pers</span>
+                                        <span class="font-bold text-emerald-400">-15%</span>
+                                    </div>
+                                    <div class="flex items-center justify-between bg-darkbg/60 px-2 py-1 rounded border border-emerald-500/20">
+                                        <span class="text-gray-300">30+ pers</span>
+                                        <span class="font-bold text-emerald-400">-20%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 bg-darkbg rounded-xl border border-gray-800 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+                            <div>
+                                <span class="text-xs text-gray-400">Preț Final Curs</span>
+                                <div class="flex items-baseline space-x-2">
+                                    <p class="text-2xl font-black text-white" id="wizard-price-display">800 RON</p>
+                                    <p class="text-sm font-bold text-gray-500 line-through hidden" id="wizard-original-price"></p>
+                                </div>
+                                <p class="text-[10px] text-gray-500 mt-0.5"><i class="fa-solid fa-info-circle"></i> Include 60 RON taxă examen / pers.</p>
+                            </div>
+                            <div class="flex flex-col items-start sm:items-end gap-2">
+                                <div id="wizard-savings-badge" class="hidden bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-3 py-1.5 rounded-lg text-xs font-bold flex items-center space-x-1.5 whitespace-nowrap">
+                                    <i class="fa-solid fa-piggy-bank"></i>
+                                    <span id="wizard-savings-text"></span>
+                                </div>
+                                <div id="wizard-advance-badge" class="hidden bg-gold/10 text-gold border border-gold/30 px-3 py-1.5 rounded-lg text-xs font-bold flex items-center space-x-1.5 whitespace-nowrap">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <span id="wizard-advance-text"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Proceed to next step button -->
+                        <button type="button" onclick="goToStep(2)" class="w-full py-4 bg-gold hover:bg-gold-light text-darkbg font-bold rounded-lg text-sm transition-all duration-300 flex items-center justify-center space-x-2">
+                            <span>Continuă spre Informații Rezervare</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- STEP 2: Personal Contact Details -->
+                    <div id="wizard-step-2" class="space-y-4 hidden animate-fade-in-up">
+                        <div>
+                            <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">Nume și Prenume Complet</label>
+                            <input type="text" id="student-name" required class="w-full bg-darkbg border border-gray-800 focus:border-gold rounded-lg px-4 py-3 text-white text-sm outline-none placeholder-gray-600" placeholder="Ex: Popescu Ionuț">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">E-mail contact</label>
+                                <input type="email" id="student-email" required class="w-full bg-darkbg border border-gray-800 focus:border-gold rounded-lg px-4 py-3 text-white text-sm outline-none placeholder-gray-600" placeholder="nume@email.ro">
+                            </div>
+                            <div>
+                                <label class="block text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">Telefon mobil</label>
+                                <input type="tel" id="student-phone" required class="w-full bg-darkbg border border-gray-800 focus:border-gold rounded-lg px-4 py-3 text-white text-sm outline-none placeholder-gray-600" placeholder="07xxxxxxxx">
+                            </div>
+                        </div>
+
+                        <!-- Legal compliance and trust lock -->
+                        <div class="bg-darkbg p-6 rounded-xl border border-gray-800 space-y-4 text-center">
+                            <div class="text-3xl text-emerald-500 mb-2">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            
+                            <!-- Checkbox confirming legal compliance -->
+                            <div class="flex items-start space-x-3 text-left">
+                                <input type="checkbox" id="student-terms" required class="mt-1 w-5 h-5 accent-gold rounded cursor-pointer">
+                                <span class="text-sm text-gray-300 font-medium">Confirm că doresc înscrierea oficială la acest curs și sunt de acord cu regulile ANC.</span>
+                            </div>
+                        </div>
+
+                        <!-- Finalize Submission -->
+                        <div class="flex space-x-3">
+                            <button type="button" onclick="goToStep(1)" class="w-1/3 py-3.5 bg-gray-800 hover:bg-gray-700 text-white font-bold rounded-lg text-xs transition-all">
+                                Înapoi
+                            </button>
+                            <button type="submit" class="w-2/3 py-3.5 bg-gradient-to-r from-gold-dark via-gold to-gold-light text-darkbg font-bold rounded-lg text-sm transition-all duration-300 hover:shadow-lg hover:shadow-gold/30 flex items-center justify-center space-x-2 active:scale-95">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>FINALIZEAZĂ REZERVARE</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <!-- STEP 3: Complete Success confirmation within Modal -->
+                <div id="wizard-success" class="hidden p-8 text-center space-y-6 animate-fade-in-up">
+                    <div class="w-20 h-20 bg-gold/15 rounded-full flex items-center justify-center text-gold text-4xl mx-auto animate-bounce">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="text-2xl font-bold text-white">Loc rezervat cu succes!</h4>
+                        <p class="text-sm text-gray-400">Felicitări! Solicitarea de rezervare pentru <span id="success-course-name" class="text-gold font-bold"></span> a fost înregistrată cu succes.</p>
+                        <p class="text-xs text-gray-500 max-w-sm mx-auto">Un reprezentant SYE vă va contacta în termen de maximum 24 de ore pentru validarea actelor de studii și definitivarea contractului.</p>
+                    </div>
+
+                    <div class="bg-darkbg p-4 rounded-xl border border-gray-800 text-left text-xs space-y-2">
+                        <p class="text-white font-bold uppercase tracking-wider text-center border-b border-gray-800 pb-2 mb-2">Rezumatul Rezervării</p>
+                        <p class="flex justify-between items-start gap-4"><span class="flex-shrink-0">Nume:</span> <span id="summary-student-name" class="text-white font-semibold text-right break-words min-w-0"></span></p>
+                        <p class="flex justify-between items-start gap-4"><span class="flex-shrink-0">Plan Plată:</span> <span id="summary-student-plan" class="text-white font-semibold text-right break-words min-w-0"></span></p>
+                        <p class="flex justify-between items-start gap-4"><span class="flex-shrink-0">Sumă Estimată:</span> <span id="summary-student-cost" class="text-gold font-bold text-right"></span></p>
+                        
+                        <!-- Dynamic Group Reservation Details -->
+                        <div id="summary-group-details" class="hidden border-t border-gray-800 pt-2 space-y-2">
+                            <p class="flex justify-between items-start gap-4"><span class="flex-shrink-0">Număr Persoane:</span> <span id="summary-group-size" class="text-white font-semibold text-right"></span></p>
+                            <div class="flex justify-between items-center text-emerald-400">
+                                <span class="flex items-center space-x-1.5"><i class="fa-solid fa-tags text-[10px]"></i> <span>Avantaj:</span></span>
+                                <span class="font-bold text-[10px] uppercase tracking-wider">Reducere de Grup Aplicată!</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="closeBookingWizard()" class="w-full py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg text-sm transition-all">
+                        Închide Fereastra
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL 2: DETAIL DRAWER -->
+    <div id="details-drawer" class="fixed inset-y-0 right-0 z-50 w-full max-w-md bg-darkbg border-l border-gold/30 shadow-2xl p-8 transform translate-x-full transition-transform duration-500 overflow-y-auto">
+        <div class="flex justify-between items-center mb-8 border-b border-gray-800 pb-4">
+            <h3 class="text-lg font-bold text-white uppercase tracking-wider flex items-center space-x-2">
+                <i class="fa-solid fa-graduation-cap text-gold"></i>
+                <span>Metodologie Completă SYE</span>
+            </h3>
+            <button onclick="toggleDetailsDrawer(false)" class="text-gray-400 hover:text-white" aria-label="Închide">
+                <i class="fa-solid fa-xmark text-2xl"></i>
+            </button>
+        </div>
+
+        <div class="space-y-6 text-sm text-gray-400">
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-base">Cine suntem noi?</h4>
+                <p class="leading-relaxed">
+                    Suntem <strong>SYE System Investment Educational</strong>, un centru acreditat de excelență educațională specializat în formarea profesională continuă a adulților.
+                </p>
+            </div>
+
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-base">De ce să ne alegi pe noi?</h4>
+                <p class="leading-relaxed">
+                    Spre deosebire de alte centre cu cursuri plictisitoare și examene greoaie, la SYE utilizăm tehnici moderne de training, axate 90% pe cazuri practice reale din România. Vei finaliza cursul având competențe palpabile pe care le poți pune imediat în practică la actualul sau viitorul tău loc de muncă.
+                </p>
+            </div>
+
+            <div class="bg-cardbg p-4 rounded-xl border border-gold/20 space-y-3">
+                <h5 class="text-gold font-bold text-xs uppercase tracking-widest">Etapele Obținerii Diplomei ANC:</h5>
+                <ol class="list-decimal list-inside space-y-2 text-xs text-gray-300">
+                    <li>Te înscrii online/telefonic și verifici eligibilitatea actelor tale.</li>
+                    <li>Parcurgi orele de curs în weekend sau după program (online/fizic).</li>
+                    <li>Sustii examenul online sau fizic în fața comisiei Ministerului Muncii.</li>
+                    <li>Primești certificatul oficial!</li>
+                </ol>
+            </div>
+
+            <!-- Footer area within Drawer -->
+            <div class="pt-6 border-t border-gray-800">
+                <a href="#contact" onclick="toggleDetailsDrawer(false)" class="w-full block text-center py-3 bg-gold hover:bg-gold-light text-darkbg font-bold rounded-lg transition-colors">
+                    Contactează un Consultant
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Application Scripts (Extracted) -->
+    <script src="script.js?v=1.1"></script>
+</body>
+</html>

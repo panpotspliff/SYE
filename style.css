@@ -1,0 +1,165 @@
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 15px rgba(214, 163, 80, 0.2); }
+    50% { box-shadow: 0 0 30px rgba(214, 163, 80, 0.6); }
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+@keyframes slide-in-toast {
+    0% { transform: translateY(100px) scale(0.9); opacity: 0; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+/* New Animation for Diagonal Grid Movement */
+@keyframes move-grid-diagonal {
+    0% { background-position: 0 0; }
+    /* Moves right (positive X) and up (negative Y) exactly one grid cell size (4rem) for a seamless loop */
+    100% { background-position: 4rem -4rem; } 
+}
+/* New Animation for Wizard Step Transitions */
+@keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+/* New Animation for Progress Bar Shimmer */
+@keyframes shimmer-slide {
+    0% { transform: translateX(-250%) skewX(-20deg); }
+    100% { transform: translateX(400%) skewX(-20deg); }
+}
+/* New Animation for Hardware Accelerated Smooth Spin */
+@keyframes spin-slow-gpu {
+    from { transform: rotate(0deg) translateZ(0); }
+    to { transform: rotate(360deg) translateZ(0); }
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 3s infinite;
+}
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+.animate-toast {
+    animation: slide-in-toast 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.animate-grid-diagonal {
+    animation: move-grid-diagonal 15s linear infinite;
+}
+.animate-fade-in-up {
+    animation: fade-in-up 0.4s ease-out forwards;
+}
+.animate-shimmer-slide {
+    animation: shimmer-slide 4s infinite linear;
+}
+.animate-spin-slow-gpu {
+    animation: spin-slow-gpu 15s linear infinite;
+    will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Custom scrollbar matching dark/gold aesthetic */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #090a0c;
+}
+::-webkit-scrollbar-thumb {
+    background: #d6a350;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #e5be7e;
+}
+/* Glassmorphism custom styling */
+.glass-header {
+    background: rgba(9, 10, 12, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(214, 163, 80, 0.15);
+}
+.glass-card {
+    background: rgba(18, 20, 24, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card:hover, .glass-card.mobile-active {
+    border-color: rgba(214, 163, 80, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px -10px rgba(214, 163, 80, 0.15);
+}
+
+/* --- NAV LINKS SCROLL ANIMATIONS --- */
+.nav-link {
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #d6a350, #e5be7e);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    box-shadow: 0 0 10px rgba(214, 163, 80, 0.6);
+    border-radius: 2px;
+}
+.nav-link.active::after, .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav-link.active {
+    color: #d6a350;
+    text-shadow: 0 0 15px rgba(214, 163, 80, 0.4);
+}
+.nav-link.active:hover {
+    color: #ffffff;
+}
+
+/* --- NOI CLASE PENTRU ANIMATII DINAMICE SI TRANZITII FLUIDE --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1), transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Special cinematic reveal for section titles with blur and scale */
+.reveal-title {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    transition: opacity 0.7s cubic-bezier(0.25, 1, 0.5, 1), transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.reveal-title.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* UPDATE: Halved the delay times for staggered elements to keep the fast pace */
+.delay-100 { transition-delay: 50ms; }
+.delay-200 { transition-delay: 100ms; }
+.delay-300 { transition-delay: 150ms; }
+
+/* Globuri ambientale pentru fundal interactiv (Parallax) */
+.ambient-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.35;
+    pointer-events: none;
+    will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    /* Ultra-performant CSS variable calculation applied directly to GPU layer */
+    transform: translate3d(calc(var(--mouseX, 0) * var(--speed, 1) * 1px), calc(var(--mouseY, 0) * var(--speed, 1) * 1px), 0);
+    transition: transform 0.8s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
